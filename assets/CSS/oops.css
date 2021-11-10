@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Noto Kufi Arabic', sans-serif;
+}
+/*----------------------------------navebar section--------------------------------------*/
+.navbar{
+    position: relative;
+    height: 500px;
+    background-image: url(../imgs/bg.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar .container-fluid{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.navbar .navbar-icon-row{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 100%;
+    height:30%;
+   
+}
+.fa-user{
+    color: white;
+    margin: 2px 0px 0px 0px;
+    
+    
+}
+.navbar-icon-row button{
+    background-color: white;
+    border-radius: 25px;
+    width: 200px;
+    height:40px;
+    font-size: 20px;
+    margin: 10px 20px 0px 0px;
+    color: #d76679;
+    text-align: center;
+    box-shadow: none;
+    
+    
+    
+}
+.navbar-icon-row button:hover{
+    color: #d76679;
+  
+}
+.navbar-img{
+    position: absolute;
+    width: 100%;
+  
+    
+}
+.navbar .lock{
+    position: absolute;
+    width: 100%;
+
+
+}
+.lock .lock-img{
+    position: absolute;
+    left:50.8%;
+    top:45px;
+
+}
+.navbar .container{
+    position: relative;
+  
+}
+.navbar .search-row{
+    position: absolute;
+    background-image: url(../imgs/search@2x.png);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    top:-40px;
+    padding-top:35px;
+ 
+}
+.navbar input[type=text], .navbar .select,.search-row button {
+    height: 70%;
+    border-top-right-radius:40px ;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius:40px;
+}
+.search-row button {
+    background-color: white;
+    height:50%;
+    width:100%;
+    margin-top: 15px;
+}
+/* --------------------------------- select arrow style-----------------------------*/
+.search-row select{
+    -webkit-appearance:none;
+     -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:1px !important;
+    background:white;
+    flex: 1;
+    padding: 0 1em;
+    cursor:pointer;
+    font-size: 1em;
+  
+
+}
+select::-ms-expand{
+    display: none;
+}
+.select {
+    position: relative;
+    width:100%;
+    display: flex;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    font-size:30px;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0 1em;
+    color: #d76679;
+
+
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ 
+/*-----------------------------------------------END---------------------------------------------------*/
+.add-advertis{
+    padding: 20px;
+    margin-top: 150px;
+}
+.add-advertis h1{
+    color: #d55f73;
+    padding-right:10px  ;
+    border-right:6px solid #ff8a5c;
+    
+
+}
+.add-advertis .container-fluid{
+    margin-top:40px;
+}
+.add-advertis .row{
+    margin-top:20px;
+}
+.add-advertis .card{
+    border-radius:20px ;
+}
+
+
+.card-text{
+    font-size: 24px;
+   
+}
+.card-body .fas{
+    color:#cf455c ;
+    padding-left:10px;
+    font-size: 23px;
+  
+}
+/*---button style-----*/
+.add-advertis button{
+    width: 350px;
+    height: 60px;
+    background-image: url(../imgs/Rectangle\ 51.png);
+    background-position:center;
+    background-size:cover;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.add-advertis button:hover{
+    color: white;
+ 
+  
+
+}
+/*---------------------------------------اشترك معنا---------------------------------------*/
+.participate{
+    background-image: url(../imgs/Rectangle\ 9.png);
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+.input-container{
+    margin-top: 150px;
+    margin-bottom:40px;
+    
+}
+
+.participate input{
+    height:90px;
+    width: 70%;
+    font-size: 20px;
+    border-top-right-radius:40px ;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius:40px;
+    display: inline-block;
+    padding-right: 40px;
+
+}
+.participate button{
+    width:30%;
+    height: 70px;
+    background-color: white;
+    color:#ff8a5c;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.participate button:hover{
+    color: #ff8a5c;
+}
+/*-------------------------------------Footer----------------------------------------------*/
+.footer{
+    padding: 0px;
+    padding-top: 40px;
+    background-image: url(../imgs/Rectangle\ 12.png);
+    background-size: cover;
+    height:500px;
+    font-size: 20px;
+}
+.oops-parent{
+    position: relative;
+
+}
+.oops-parent .oops{
+    position: absolute;
+    left: 10px;
+    width:90%;
+    top:-50px !important;
+}
+.oops-parent .lock{
+    position: absolute;
+    right:170px;
+    top:10px;
+  
+
+}
+.oops .lock img{
+    height:100px !important;
+}
+.footer-text{
+    position: absolute;
+    margin-top:200px;
+    
+}
+.footer .fab{
+    color: white;
+    padding: 20px;
+    margin-top:0px;
+    font-size: 40px;
+}
+.footer .icons{
+    width: 100%;
+
+}
+.footer .google-icon{
+    width:100%;
+    height: 70px;
+    margin-top: 30px;
+    color: #cf455c;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding:5px;
+}
+.google-icon span{
+    margin-top:10px;
+}
+.google-icon .fab{
+    color: #ff8a5c;
+}
+
+
