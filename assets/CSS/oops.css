@@ -77,6 +77,7 @@
   
 }
 
+
 .search .search-row2{margin-top: 30px; margin-bottom: 50px}
 .search .container input[type=text], .search .container .select,.search-row button ,select {
     height:80px;
@@ -90,9 +91,10 @@
 
 .search-row button{
     background-color: white;
-    height:50%;
-    width:100%;
-    margin-top: 15px;
+    height:80px;
+    width:60%;
+    font-size: 24px;
+  
 }
 /* --------------------------------- select arrow style-----------------------------*/
  select{
@@ -108,6 +110,11 @@
      padding:10px;
      padding-right: 20px;
  }
+.home-search select{
+    background-image: url("data:image/svg+xml;utf8,<svg fill='rgb(215 102 121)' height='50' viewBox='0 0 24 24' width='50' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+
+
+}
  select:focus{
      border:1px solid #ffff ;
  }
@@ -118,7 +125,17 @@
 
  @media only screen and (max-width: 600px) {
     .search-row{height: 300px;}
+
    
+    }
+    @media only screen and (min-width:610px)  and (max-width:950px){
+        .home-search input , .home-search .select{margin-bottom: 20px;}
+        .categories .category-wrap{
+            margin-bottom: 20px;
+        }
+      
+
+        
     }
  
 /*-----------------------------------------------END---------------------------------------------------*/
@@ -127,16 +144,14 @@
     margin-top:150px;
    
 }
-.categories .container .row{
-   
 
-}
 
 .category{
     width:60%;
     height:120px ;
     border-radius: 100%;
     display: inline-block;
+   
     
 }
 
@@ -267,7 +282,7 @@
     color: white;
     padding: 40px;
 }
-.input-container{
+ .participate .input-container{
     margin-top: 150px;
     margin-bottom:40px;
     
@@ -312,30 +327,18 @@
     position: relative;
 
 }
-.oops-parent .oops{
-    position: absolute;
-    left: 10px;
-    width:90%;
-    top:-50px !important;
-}
-.oops-parent .lock{
-    position: absolute;
-    right:225px;
-    top:40px;
-    height: 100px !important;
+.footer .oops-img{
+    margin-top: -30px;
   
-
 }
+.footer .oops-img img{margin-top:-25px;}
 
-.footer-text{
-    position: absolute;
-    margin-top:200px;
-    
-}
+
+
 .questions a{color: white;}
 .footer .fab{
     color: white;
-    padding: 20px;
+    padding: 10px;
     margin-top:0px;
     font-size: 40px;
 }
@@ -368,39 +371,33 @@
     display: inline-block;
     margin-top: 15px;
     padding-left: 10px;
+    text-align: start;
     
     
 }
+
 
 .icon-header{margin-top: 20px;}
 .google-icon .fab ,.google-icon .fas{
     color: #ff8a5c;
-    padding-right: 0px;
+  
+   
 }
 .fa-apple  {
     position: absolute;
-    top: -25px;
+    top: -10px;
     left: 10px;
-    width: 60px;
+    width: 90px;
+    text-align:end;
 
+}
+.fa-robot{text-align: end; padding-left: 2px;}
+@media only screen and (max-width: 600px) {
+    .google-icon p{font-size: 28px; margin-top: 5px;}
 }
 
 
-@media only screen and (max-width: 768px) {
 
-    .footer .questions{
-        margin-top: 400px;
-    }
-    .footer-text p{
-        margin-top: 50px !important;
-        font-size: 18px;
-        
-    }
-    
-   
-    
-    
-}
 
 
 /*---------------------------------CAR PAGE---------------------------------------------------*/
@@ -475,7 +472,7 @@
     text-decoration: none;
     height: 100%;
     width: 100%;
-    background-color: #a8888e;
+    background-color:#cf455c;
     border-top-right-radius:25px;
     border-bottom-right-radius:25px;
     border-top-left-radius:25px;
@@ -524,8 +521,8 @@ form{color: white;}
     padding-right: 10px;
     margin-right: 10px;
 }
-
-.overlay{
+ 
+.car-details .overlay{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -538,7 +535,7 @@ form{color: white;}
 
 
 
-.img{
+.car-details .img{
     position: relative;
     background-image: url(../imgs/2.png);
     background-size: cover;
@@ -701,6 +698,16 @@ form{color: white;}
     background-color: #ff8a5c ;
     margin-top: 10px;}
 .instructions p{padding-right: 5px; text-align: right;}
+@media only screen and (max-width:600px){
+    .label-detail{font-size: 18px !important;}
+    .car-year{margin-bottom:20px;}
+    .car-details-header{margin-top: 20px;}
+    .circle{width:18px; margin-bottom: 2px;}
+    .instructions{width:90%;}
+    .instructions p{font-size: 10px; display: inline;}
+   
+    
+}
 
 
 
@@ -764,9 +771,8 @@ form{color: white;}
 
 }
 /*------------------------------style of check box-------------------------------------------*/
-.checkbox{display: inline-block; margin-top: 20px;}
-  /* The container */
-.container {
+
+.checkbox-parent .container {
     display: inline-block;
     padding-left: 35px;
     position: relative;
@@ -781,7 +787,7 @@ form{color: white;}
   }
   
   /* Hide the browser's default checkbox */
-  .container input {
+  .checkbox-parent .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -790,7 +796,7 @@ form{color: white;}
   }
   
   /* Create a custom checkbox */
-  .checkmark {
+  .checkbox-parent  .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -799,30 +805,30 @@ form{color: white;}
     background-color: #eee;
   }
   
-  /* On mouse-over, add a grey background color*/ 
-  .container input ~ .checkmark {
+  /* On mouse-over, add a grey background color*/
+   .checkbox-parent .container input ~ .checkmark {
     background-color: #f3795c;
   }
   
   /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+   .checkbox-parent .container input:checked ~ .checkmark {
     background-color: #f3795c;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+   .checkbox-parent  .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+  .checkbox-parent .container input:checked ~ .checkmark:after {
     display: block;
   }
   
   /* Style the checkmark/indicator */
-  .container .checkmark:after {
+  .checkbox-parent .container .checkmark:after {
     left: 9px;
     top: 0px;
     width: 9px;
@@ -833,6 +839,7 @@ form{color: white;}
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+  .checkbox-parent .checkbox{display: inline-block;}
   
  
   

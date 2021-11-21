@@ -21,26 +21,24 @@
       <section class="navbar">
           <div class="container-fluid">
               <div class="row navbar-icon-row" style=" height: 200;">
-                <i class="fas fa-user fa-3x"></i>
-                <button type="button" class="btn ">أضف اعلان</button>
+                <a href="login.html"><i class="fas fa-user fa-3x"></i></a>
+                
+                <button  type="button" class="btn "  onclick="location.href='add-e3lan.html'">أضف اعلان</button>
               </div>
               <div class="row navbar-img justify-content-center" style="height: 150;">
                 <img src="assets/imgs/! اووبس.png">
                 
             </div>
-              <div class="row lock"> 
-                <img class="lock-img"  src="assets/imgs/shopping-bag.png">
-            </div>
-           
-
-
+              
           </div>
           </section>
-          <section class="search">
+          <section class="search home-search text-center">
             <div class="container">
               <div class="row search-row justify-content-center">
                   <div class="col-lg-4 col-sm-12">
-                      <input type="text" class="form-control" placeholder="عن ماذا تبحث؟" aria-label="Username" aria-describedby="basic-addon1">
+
+                 
+                      <input type="text"  class="form-control" placeholder="عن ماذا تبحث؟" >
   
   
                   </div>
@@ -65,24 +63,9 @@
                             
                   </div>
                   <div class="col-lg-4 col-sm-12 select-parent">
-                      <div class="select">
-                         
-                          <select name="format" id="format">
-                              <option selected disabled>عربيات</option>
-                      
-                             <option value="pdf">PDF</option>
-                             <option value="txt">txt</option>
-                             <option value="epub">ePub</option>
-                             <option value="fb2">fb2</option>
-                             <option value="mobi">mobi</option>
-                          </select>
-                     
-                       </div>
                     
-                     
-                             
-                            
-                            
+                          <button type="button" class="btn " >ابحث</button>
+                    
                   </div>
   
                   
@@ -97,7 +80,7 @@
       <section class="categories">
         <div class="container">
           <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-6 text-center p-0">
+            <div class="col-lg-2 col-md-4 col-sm-6 text-center p-0 category-wrap">
               <div class="category car text-center"><i class="fas fa-car-alt"></i></div>
               <div class="dropdown  text-center" >
                 <button class="btn  btn-dropdown " type="button"  data-toggle="dropdown">
@@ -111,7 +94,7 @@
               </div>
             </div>
   
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center category-wrap">
               <div class="category mobile"><i class="fas fa-mobile"></i></div>
               <div class="dropdown text-center">
                 <button class="btn btn-dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -123,7 +106,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center ">
+            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center category-wrap ">
               <div class="category building"><i class="fas fa-building"></i></div>
               <div class="dropdown text-center">
                 <button class="btn btn-dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -137,7 +120,7 @@
               </div>
             </div>
             
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center category-wrap">
               <div class=" category fashion"><i class="fas fa-tshirt"></i></div>
               <div class="dropdown text-center">
                 <button class="btn btn-dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -150,7 +133,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center ">
+            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center category-wrap ">
               <div class="category electronics"><i class="fas fa-tv"></i></div>
               <div class="dropdown text-center">
                 <button class="btn btn-dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -164,7 +147,7 @@
               </div>
             </div>
              
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 p-0 text-center category-wrap">
               <div class="category animal"><i class="fas fa-paw"></i></div>
               <div class="dropdown text-center">
                 <button class="btn btn-dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -361,7 +344,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-sm-12 text-center">
-              <button type="button" class="btn ">المزيد</button>
+              <button type="button" class="btn " onclick="location.href='cars.html'">المزيد</button>
           </div>
 
           </div>
@@ -387,71 +370,84 @@
             <button type="submit" class="btn btn-primary">ارسال</button>
           </form>
         </div>
-          <!--div class="col-lg-12 col-md-12 col-sm-12 text-center">
-            <input type="text" class="form-control" placeholder="البريد الإلكتروني" aria-label="Username" aria-describedby="basic-addon1">
-
-          </div>
-        </div>
-        <div class="container button-container">
-          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-            <button type="button" class="btn ">ارسال</button>
-          </div>
-        </div-->
+        
 
       </section>
-      <section class="footer">
-        <!-- Footer -->
-        <footer class=" text-white text-center text-md-start">
-          <!-- Grid container -->
-          <div class="container-fluid p-4">
-            <!--Grid row-->
-            <div class="row">
-              <!--Grid column-->
-              <div class="col-lg-4 col-md-12 col-sm-12  mb-md-0 oops-parent">
-                <img class="oops" src="assets/imgs/! اووبس.png">
-                
-              <div class="footer-text">
-                <p>
-           وريم ايبسوم هو نموذج افتراضي يوضع  لتعرض على 
-                  
-                
-                  العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
-                   
-                
-                  
-                   سبيل المثال ... او نماذج مواقع انترنت ...
-                </p>
-
-              </div>
+    <!------------------------------FOOTER----------------------------------->
+            <!-- Footer -->
+            <footer class="footer text-center text-white">
+              <!-- Grid container -->
+              <div class="container-fluid p-4">
              
-      
-              
-   
-              </div>
-              <!--Grid column-->
-      
-              <!--Grid column-->
-              <div class="col-lg-2 col-md-12 col-sm-12 mb-4  questions">
-                <a href="#"> <p> الأسئلة الأكثر تداولا </p></a>
-                <a href="#"><p> شروط الاستخدام</p> </a>
-                <a href="#"><p> سياسة الخصوصية</p></a>
-                <a href="#"><p>خريطة الموقع </p></a>
-               
-               </div>
-              <!--Grid column-->
-      
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""> <i class="fab fa-facebook"></i></a>
-               
-               
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0 icons">
-                <h1>قم بتحميل التطبيق مجانا</h1>
+                <!-- Section: Links -->
+                <section class="">
+                  <!--Grid row-->
+                  <div class="row ">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0  oops-img" >
+                      <div class="col-auto">
+                          <img class="oops" src="assets/imgs/! اووبس.png" style="width:100%;">
+                       
+                      </div>
+                      
+            
+                      <ul class="list-unstyled mb-0 footer-left-side" >
+                       
+                        <li>
+                          <p class="text-white"> وريم ايبسوم هو نموذج افتراضي يوضع  لتعرض على 
                 
-                <div class="google-icon justify-content-center d-md-flex">
+              
+                              العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                               
+                            
+                              
+                               سبيل المثال ... او نماذج مواقع انترنت ...
+            
+                          </p>
+                        </li>
+                      
+                      </ul>
+                    </div>
+            
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0  Footercenter-side" >
+                    
+            
+                      <ul class="questions list-unstyled mb-0">
+                        <li>
+                          <a href="#"> <p> الأسئلة الأكثر تداولا </p></a>
+                        </li>
+                        <li>
+                          <a href="#"><p> شروط الاستخدام</p> </a>
+                        </li>
+                        <li>
+                          <a href="#"><p> سياسة الخصوصية</p></a>
+                        </li>
+                        <li>
+                          <a href="#"><p>خريطة الموقع </p></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Grid column-->
+            
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0 FooterRight-side" >
+                      
+                          <a href=""><i class="fab fa-instagram"></i></a>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""> <i class="fab fa-facebook"></i></a>
+                         
+                         
+                       
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0  Footercenter-side">
+                      <h1>قم بتحميل التطبيق مجانا</h1>
+                    
+            
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                             
+              <div class="google-icon justify-content-center d-md-flex">
                   <p> Get it on google play</p>
                      
                       <i class="fas fa-robot fa-3x"></i>
@@ -462,30 +458,30 @@
               
                
               </div>
-              <div class="google-icon justify-content-center d-md-flex">
-                <p>Get it on app store </p>
-                 
-               
-                      <i class="fab fa-apple  "  style="font-size: 70px;" ></i>
-                      <a href="#"></a>
-                 
-                
+                        </li>
+                        <li>
+                          <div class="google-icon justify-content-center d-md-flex">
+                              <p>Get it on app store </p>
+                               
+                             
+                                    <i class="fab fa-apple  "  style="font-size: 70px;" ></i>
+                                    <a href="#"></a>
+                               
+                              
+                            </div>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  
+                  </div>
+                </section>
               </div>
-               
-                
-      
-              
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-          </div>
-          <!-- Grid container -->
-      
-        
-        </footer>
-        <!-- Footer -->
-      </section>
+              <!-- Grid container -->
+            
+           
+            </footer>
+            <!-- Footer -->
     
     
 
